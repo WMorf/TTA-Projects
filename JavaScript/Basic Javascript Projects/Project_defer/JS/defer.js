@@ -1,0 +1,1 @@
+document.getElementById('tag').innerHTML = "This loaded correctly" // Runs when page is fully loaded

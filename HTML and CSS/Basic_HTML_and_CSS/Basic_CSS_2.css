@@ -1,0 +1,13 @@
+p {
+	color: red;
+	background: black;
+	font-weight: bold;
+	text_align: center;
+	font-size: medium;
+	/* This is a comment for CSS */
+}
+
+h2 {
+	color: red;
+	text-shadow: 2px 2px black;
+}

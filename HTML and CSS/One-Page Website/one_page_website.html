@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Strike The Earth | Dwarven Vacations</title>
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<link rel="icon" type="image/x-icon" href="./images/icons/favicon.ico">
+		<script src="js/one_page_website.js" defer></script>
+
+	</head>
+	
+	<body>
+	
+		<section> <!-- HOME -->
+			<div class="home">
+				<div id="home" class="titleimage">
+					<header>
+						<h1>DWARF FORT <br> RESORTS</h1>
+						<h4>Join a Caravan Today!</h4>
+					</header>
+				</div>
+			</div>
+			
+		</section>
+
+		<section> <!-- NAV -->
+			<div>
+				<nav>
+					<a href="#home" id="link">HOME &nbsp;</a>
+					<a href="#video" id="link">VIDEO &nbsp;</a>
+					<a href="#gallery" id="link">GALLERY &nbsp;</a>
+					<a href="#contact" id="link">RESERVATIONS &nbsp;</a>
+					<a href="#about" id="link">ABOUT &nbsp;</a>
+				</nav>
+			</div>	
+		</section>
+		
+		<br>
+		<br>
+		<br>
+
+		<section> <!-- INTRO -->
+			<div class="center">
+				<div class="textblock">
+					<img src="./images/Thumb/gimli.png" style="width:300px;height:200px" alt="Gimli the dwarf">
+					<div>
+						<p>"Ate not but mushrooms and small vermin for three seasons <br>
+						held up under a glacier because someone though a fortress would<br>
+						'look nifty' there. All this as undead goblins and elves alike <br>
+						pounded at the doors."<br>
+						<span style="color: yellow">3 out of 5 anvils <br>
+						WOULD RECOMMEND</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<br>
+		<br>
+	
+		<section> <!-- VIDEO -->
+			<div id="video">
+				<div class="center">
+					<div class="textblock">
+						<div>
+							<iframe width="400" height="200" src="https://www.youtube.com/embed/sVVj55r3_HY?">
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<br>
+		<br>
+		<br>
+
+		<section> <!-- TABLE -->
+			<div class="center">
+				<div class="textblock">
+					<table>
+						<colgroup>
+							<col style="background-color: red;">
+							<col style="background-color: green;">
+						</colgroup>
+
+						<tr>
+							<th>Equipment</th>
+							<th>Dwarf-Bucks</th>
+						</tr>
+
+						<tr>
+							<td>Cow</td>
+							<td>*175</td>
+						</tr>
+
+						<tr>
+							<td>Pickaxe</td>
+							<td>*100</td>
+						</tr>
+
+						<tr>
+							<td>Mushroom</td>
+							<td>*25</td>
+						</tr>
+
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<br>
+		<br>
+		<br>
+
+		<section><!-- GALLERY -->
+			<div id="gallery">
+				<div class="center">
+					<div class="textblock">
+						<div>
+							<div class="thumbs">
+								<img src="./images/Thumb/thumbnail_3.png" style="width:400px;height:300px" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Caravan"></a>
+							</div>
+							
+							<div class="thumbs">
+								<img src="./images/Thumb/thumbnail_5.png" style="width:400px;height:300px" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Logo"></a>
+							</div>
+							
+							<div class="thumbs">
+								<img src="./images/Thumb/thumbnail_6.png" style="width:400px;height:300px" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Complex Fort"></a>
+							</div>
+						</div>
+
+						<div>
+							<div class="thumbs">
+								<img src="./images/Thumb/thumbnail_7.png" style="width:400px;height:300px" onclick="openModal();currentSlide(4)" class="hover-shadow" alt=""></a>
+							</div>
+							
+							<div class="thumbs">
+								<img src="./images/Thumb/thumbnail_9.png" style="width:400px;height:300px" onclick="openModal();currentSlide(5)" class="hover-shadow" alt=""></a>
+							</div>
+							
+							<div class="thumbs">
+								<img src="./images/Thumb/thumbnail_8.png" style="width:400px;height:300px" onclick="openModal();currentSlide(6)" class="hover-shadow" alt=""></a>
+							</div>
+						</div>
+					</div>
+
+					<br>
+					<br>
+					<br>
+							
+					<div class="textblock"> <!-- GIF -->
+						<div class="gif">
+							<img src="./images/Thumb/thumbnail_10.gif" style="width:600px;height:480px" alt="Fort in action">
+						</div>
+					<div>		
+				</div>
+			</div>
+		</section>
+
+		<section><!-- Modal/Lightbox -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<!-- First Slide -->
+					<div class="mySlides">
+						<div class="numbertext">1/6 </div>
+						<img src="images/Thumb/thumbnail_3.png" style="width:100%; height: 500px;" alt="">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2/6 </div>
+						<img src="images/Thumb/thumbnail_5.png" style="width:100%; height: 500px;" alt="">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3/6 </div>
+						<img src="images/Thumb/thumbnail_6.png" style="width:100%; height: 500px;" alt="">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4/6 </div>
+						<img src="images/Thumb/thumbnail_7.png" style="width:100%; height: 500px;" alt="">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">5/6 </div>
+						<img src="images/Thumb/thumbnail_9.png" style="width:100%; height: 500px;" alt="">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">6/6 </div>
+						<img src="images/Thumb/thumbnail_8.png" style="width:100%; height: 500px;" alt="">
+					</div>
+
+					<!-- Controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<!-- Thumb controls -->
+					<div class="column">
+						<img class="lightbox" src="images/Thumb/thumbnail_3.png" onclick="currentSlide(1)" alt="A Caravan arrives!">
+					</div>
+					<div class="column">
+						<img class="lightbox" src="images/Thumb/thumbnail_5.png" onclick="currentSlide(2)" alt="Dwarf Fortress">
+					</div>
+					<div class="column">
+						<img class="lightbox" src="images/Thumb/thumbnail_6.png" onclick="currentSlide(3)" alt="A Complex Fort">
+					</div>
+					<div class="column">
+						<img class="lightbox" src="images/Thumb/thumbnail_7.png" onclick="currentSlide(4)" alt="A Forgotten Beast Approaches">
+					</div>
+					<div class="column">
+						<img class="lightbox" src="images/Thumb/thumbnail_9.png" onclick="currentSlide(5)" alt="A dwarven hero faces off with a murderous elephant">
+					</div>
+					<div class="column">
+						<img class="lightbox" src="images/Thumb/thumbnail_8.png" onclick="currentSlide(6)" alt="An underground cavern is discovered">
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<section> <!-- CONTACT -->
+			<div id="contact" class="center">
+				<div class="textblock">
+					<div> <!-- heading -->
+						<h1 style="color: yellow; font-size: 50px">RESERVATIONS</h1>
+						
+						<h2><span>The MountainHome must grow.</span>
+						<br><u>Strike the Earth!</u></h2>
+						
+						<p>Please provide your contact info</p>
+					</div>
+
+					<div> <!-- input boxes -->
+						<form action="" method="post">
+							<div>
+								<br><input class="g" type="text" value ="First Name"><br>
+								<br>
+								<input class="g" type="text" value ="Family Name"><br>
+								<br>
+								<input class="g" type="text" value ="Email Adress"><br>
+								<br>
+								<input class="g" type="text" value ="Phone Number"><br>
+								<br>
+
+								<input type="checkbox" id="undead" name="undead" value="Undead" style="width: auto;">
+								<label for="undead">Undead?</label>
+
+								<br><input type="submit" value="Embark Now!" style="padding: 14px 20px;"; ><br>
+
+								<br><label>Terms and Conditions</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<section> <!-- ABOUT -->
+			<div id="about" class="center">
+				<article class="textblock">
+					<h2>Dwarf Fortress</h2>
+					<p>Dwarf Fortress (officially called Slaves to Armok: God of Blood Chapter II: Dwarf Fortress)<br>
+					is a construction and management simulation and roguelike indie video game created by Bay 12 Games.<br>
+					Available as freeware and in development since 2002, its first alpha version was released in 2006 <br>
+					and it received attention for being a two-member project surviving solely on donations.
+					</p>
+				</article>
+			</div>
+		</section>
+
+		<p style="visibility: hidden;">YOU can't see me!</p>
+
+		<section> <!-- FOOTER -->
+			<div class="center">
+				<footer>
+					<div>
+						<p>Author: Wesley Morford</p>
+						<p>Dwarf Fortress Creators: Zach and Tarn Adams of <a href="http://www.bay12games.com/dwarves/" target="_blank"> Bay12Games&copy;</a> </p>
+					</div>
+				</footer>
+			</div>
+		</section>
+	
+
+	</body>
+	
+</html>

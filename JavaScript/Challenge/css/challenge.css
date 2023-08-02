@@ -1,0 +1,73 @@
+
+html {
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+/* for step 390 */
+h1 { /* Responsive font- text size will follow the size of the browser window */
+    font-size: 8vw;
+}
+
+/* -------------------- Fade elements for step 391 -------------- */
+body {
+    opacity: 1;
+    transition: 1s opacity;
+    color: white;
+}
+
+/* Start out hidden */
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+/* -------------------- form popup for step 393 -------------- */
+
+.form-popup {
+    display: none;
+    /*position: fixed;*/
+    z-index: 9;
+}
+
+label {
+    color: black;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* -------------------- keyframe animation for step 394 -------------- */
+
+.thismove {
+    animation: shift 15s infinite;
+}
+
+@keyframes shift {
+    0% {font-size: 40px;}
+    50% {font-size: 70px;}
+    100% {font-size: 40px;}
+}
+
+/* -------------------- zoom animation for step 395 -------------- */
+
+@keyframes zoom {
+    0% {transform: scale(1,1);}
+    50% {transform: scale(1.1,1.1);}
+    100% {transform: scale(1,1);}
+}
+
+.zooming {
+    animation: zoom 10s infinite;
+}
+
+/* -------------------- sticky element for step 395 -------------- */
+
+.sticky {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+}

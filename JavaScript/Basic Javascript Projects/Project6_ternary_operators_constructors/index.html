@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Template</title>
+		<link rel="stylesheet" href="CSS/simple.css">
+		<script src="Js/main.js"></script>
+	</head>
+	
+	<body>
+
+		<br>
+
+		<h1>Project 6</h1>
+
+		<br>
+
+		<div style="background-color: lightgrey;">
+			<!-- Using Ternary Operator-->
+			<p>Riders must be at least 52 centimeters tall to ride</p>
+			<input id="height" value="52" />
+			<button onclick="Ride_Function()">Click here</button>
+			<p id="ride"></p>
+		</div>
+
+		<br>
+
+		<div style="background-color: rgb(165, 163, 163);"> <!-- Checks if potential voter is above 18 to vote -->
+			<p>You must be 18 to vote</p>
+			<input id="age" value="18" />
+			<button onclick="Vote_Function()">Click here</button>
+			<p id="vote"></p>
+		</div>
+
+		<br>
+
+		<div style="background-color: lightgrey;"> <!-- Prints info from Erik.Vehicle -->
+			<button onclick="myFunction()">Click Here</button>
+			<p id="Keywords_and_Constructors">What Does Erik drive?</p>
+		</div>
+
+		<br>
+
+		<div style="background-color: rgb(165, 163, 163);"> <!-- Prints info from bigPlane.Plane -->
+			<button onclick="myOtherFunction()">Click Here</button>
+			<p id="New_and_This">Big Plane</p>
+		</div>
+
+		<br>
+
+		<div style="background-color: lightgrey;"> <!-- uses nested function -->
+			<p id="nested_function" onclick="MyNestedFunction(15)">Click here to "Take a Five"</p> <!-- varible input into function "x" will have 5 subtracted -->
+		</div>
+
+	</body>
+	
+</html>

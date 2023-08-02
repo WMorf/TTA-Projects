@@ -1,0 +1,40 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+input { /**/
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;
+    background-color: grey;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+    input:focus { /*Hide outline on hover*/
+        outline: none;
+    }
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: blanchedalmond;
+}

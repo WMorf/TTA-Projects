@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>HTML TemplateXML Example</title>
+	</head>
+	
+	<body>
+		<p id="XML_Example"></p>
+        <p id="XML_Example2"></p>
+
+		<script>
+			var XML_Parser, XML_Document;
+			
+			//creates a text string
+			var Potion = "<potion>" +
+			"<name>Health Potion </name>" +
+			"<size>Small </size>" +
+			"<value>50gp </value>" +
+			"<power>2d4+2 </power>" +
+			"</potion>";
+
+            //creates and XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Potion,"text/xml");
+
+            document.getElementById("XML_Example").innerHTML =
+            XML_Document.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+
+		</script>
+	</body>
+	
+</html>

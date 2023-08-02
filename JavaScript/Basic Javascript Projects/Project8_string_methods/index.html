@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Template</title>
+		<link rel="stylesheet" href="CSS/simple.css">
+		<script src="Js/main.js"></script>
+	</head>
+	
+	<body>
+		<br>
+
+		<h1>Project 8</h1>
+
+		<br>
+
+		<!-- uses concat() method for step 157-->
+		<div style="background-color: grey;">
+			<p id="concatenate"></p>
+			<button onclick="FullSentence()" id="buttontext">Click to display sentence</button>
+		</div>
+
+		<br>
+
+		<!-- uses slice() method for step 159 -->
+		<div style="background-color: lightgrey;">
+			<p id="slice">"C'mon you apes! You wanna live forever?"</p>
+			<button onclick="SliceMethod()">Slice (16,30)</button>
+		</div>
+
+		<br>
+
+		<!-- uses toUpperCase() method for step 160  -->
+		<div style="background-color: grey;">
+			<p id="uppercase">this sentence needs some capital treatment</p>
+			<button onclick="UpperCase()">toUpperCase</button>
+		</div>
+
+		<br>
+
+		<!-- uses search() method for step 160 -->
+		<div style="background-color: lightgrey;">
+			<img src="Images/cow.gif" alt="Rong Burgundy">
+			<br>
+			<br>
+			<button onclick="CowSearch()">Search for the first "cow"</button>
+			<p id="tosearch">Ron Burgundy: "How now brown cow, how now brown cow.</p> <!-- first "cow" at position 29 -->
+			<p id="searchresult">Position of Cow</p>
+		</div>
+
+		<br>
+
+		<!-- uses toString method for step 162 -->
+		<div style="background-color: grey;">
+			<p id="numbers_to_string">Result Here</p>
+			<button onclick="StringMethod()">Convert Number to String</button>
+		</div>
+
+		<br>
+
+
+		<!-- uses toPrecision method for step 164 -->
+		<div style="background-color: lightgrey;">
+			<p id="precise">3.14159265358979323846</p>
+			<button onclick="PrecisionMethod()">Format to length of 5</button>
+		</div>
+
+		<br>
+
+		<!-- uses toFixed Method for step 165 -->
+		<div style="background-color: grey;">
+			<p id="tobefixed">8.675309</p>
+			<button onclick="FixNum()">Convert number to string and round to 2 decimals</button> 
+		</div>
+
+		<br>
+
+		<!-- uses valueOf method for step 165 -->
+		<div style="background-color: lightgrey;">
+			<button onclick="GetValue()">Click Here</button>
+			<p id="valueof">Value of text Here. Click me!</p>
+		</div>
+
+		<br>
+
+	</body>
+	
+</html>

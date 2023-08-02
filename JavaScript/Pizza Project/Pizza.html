@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<META http-equiv="content-type" content="text/html"; charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Pizza Drill Demo</title>
+		<link rel="stylesheet" type="text/css" href="CSS/Pizza_CSS.css">
+		<script src="Js/Pizza_JavaScript.js" defer></script>
+	</head>
+	
+	<body>
+
+		<section> <!-- NAV -->
+			<div class='center' id="home">
+				<nav>
+					<a href="#home" id="link">HOME &nbsp;</a>
+					<a href="#order" id="link">ORDER &nbsp;</a>
+					<a href="#about" id="link">ABOUT &nbsp;</a>
+				</nav>
+			</div>	
+		</section>
+
+		<br>
+		<br>
+		<br>
+
+		<div id="menuBG">
+			<h1 style="margin: 0 0px 0 20px;">Python Pizza</h1>
+			<form id="frmMenu">
+				<br>
+				<div>
+					<div class="menu textblock left">
+						<h3>Size:</h3>
+						<input class="size" type="radio" name="Size"
+							value="Hatchling Pizza">Hatchling Pizza<br>
+						<input class="size" type="radio" name="Size"
+							value="Personal Pizza">Personal Pizza<br>
+						<input class="size" type="radio" name="Size"
+							value="Medium Pizza">Medium Pizza<br>
+						<input class="size" type="radio" name="Size"
+							value="Large Pizza">Large Pizza<br>
+						<input class="size" type="radio" name="Size"
+							value="Extra Large Pizza">Extra Large Pizza<br>
+					</div>
+
+					<div class="menu textblock left">
+						<h3>Veggies:</h3>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Mushroom">Mushroom<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Fire Flower">Fire Flower<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Tomatoes">Worms<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Tomatoes">Tomatoes<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Olives">Olives<br>
+					</div>
+
+					<div class="menu textblock right">
+						<h3>Meat:</h3>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Sausage">Sausage<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Pepperoni">Pepperoni<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Worms">Worms<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Lizard">Lizard<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Dino">Dino<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Mammal">Mammal<br>
+						<input class="toppings" type="checkbox" name="Topping"
+							value="Pterodactyl Tail">Pterodactyl Tail<br>
+					</div>
+					
+					<div class="menu textblock right center">
+						<img src="./media/pizza.jpg" alt="Pizza Guy">
+						<p>Order Up!</p>
+					</div>
+				</div>
+
+				<div class="center">
+					<h2> "Coop-A Special"</h2>
+					<p>"Dino, lizard, hold the Mammal, no worms, and spicy!"</p>
+				</div>
+
+				<div class="textblock centerblock" id="order">
+					<h3>Order</h3><br>
+					<div id="showText" class="left"></div>
+	
+					<div id="totalPrice" class="right"></div>
+				</div>
+
+				<div>
+					<input id="btnOrder" type="button" onclick="getReceipt()"
+					value="Place Order">
+				</div>
+
+			</form>
+		</div>
+
+		<br>
+
+		<footer id="about">
+			<p>Made by Wesley Morford</p>
+		</footer>
+	</body>
+	
+</html>

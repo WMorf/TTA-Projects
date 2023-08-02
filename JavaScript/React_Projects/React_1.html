@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Template</title>
+		<link rel="stylesheet" href="">
+		<script src="react.js" ></script>
+		<script src="react-dom.js" ></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"--><!--From URL-->
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"-->
+	</head>
+	
+	<body>
+		<div id="My_React_Code"></div>
+		<script>
+			var Counter = React.createClass({ //creates component classes
+				render: function() {
+					var time_Passed = Math.round(this.props.time_Passed / 100);
+					var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0');
+					var text = 'My React code started running ' +
+						seconds_Passed + ' seconds ago!';
+					return React.DOM.p(null, text);
+				}
+			});
+
+			var counter_Factory = React.createFactory(Counter); //a function that generates a factory (object that can create other objects)
+
+			var start_Counting = new Date().getTime();
+			setInterval(function() {
+				ReactDOM.render( //used to render a React Component or Components
+					counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+					document.getElementById('My_React_Code')
+				);
+			}, 50);
+		</script>
+	</body>
+	
+</html>

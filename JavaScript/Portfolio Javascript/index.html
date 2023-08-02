@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+		<title>Wesley Morford</title>
+        <link rel="shortcut icon" type="img/jpg" href="">
+		<link rel="stylesheet" href="stylesheet/portfolio.css">
+	</head>
+	
+	<body class="Background">
+
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="back_video">
+                <source src="./video/back.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Wesley Morford's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>“Any fool can write code that a computer can understand.
+                        <br> Good programmers write code that humans can understand.”
+                        <br> - Martin Fowler
+                    </q>
+                    <br>
+                    <br>
+                    <p class="center">My name is Wesley Morford. Welcome to my portfolio. Below, I will tell you about my background and experience.
+                    <br>
+                    <br>Thanks for coming by and enjoy!</p>
+                </p>
+            </strong>
+        </div>
+
+        <!-- Slideshow section-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/wm.JPG" alt="">
+                        <div class="text">I'm excited to assist you on your project!</div>
+                    </div> 
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/web.jpeg" alt="HTML, CSS, Javascript Logos">
+                        <div class="text">I am a full stack developer<br>experienced with HTML, CSS, JavaScript,</div>
+                    </div> 
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Python.png" alt="Python Logo">
+                        <div class="text">Python programming language,</div>
+                    </div> 
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/SQL.jpg" alt="SQL Logo">
+                        <div class="text">backend development, databases and SQL</div>
+                    </div> 
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/GitHub.png" alt="Github Logo">
+                        <div class="text"><a href="https://github.com/WMorf" target="_blank">Check out my GitHub</a></div>
+                    </div> 
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/mail.jpg" alt="envelope">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me!</a></div>
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br><!--Space between dots and slideshow-->
+
+                <!--Slideshow dots-->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="./images/html_custom.png" alt=""> 
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    <p>I am a software developer and avid coder. I enjoy getting old DOS games to run on modern PCs and look forward to getting my son involved in all things nerdy and awesome.</p>
+                    <p>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Boot Camp, and trained in the following web and programming languages: HTML, CSS, JavaScript, SQL and more.</p>
+                    <!--<p>In my free time I also work on my own Game Development projects with C# and Unity.</p>-->
+                    <p>I am a full-stack developer and I'm excited to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>Github</h1>
+                <p> Here are some of my coding projects on GitHub:
+                    <br>
+                    <p class="center"><a href="https://github.com/WMorf" target="_blank">Wesley Morford Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/WMorf" target="_blank"><img src="./images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div id="Contact">  <!--<img src="./images/html_custom2.png" alt="Contact_Image">-->
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/xgedrawy" method="post" class="form-container">
+                    <h1>Contact</h1>
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+                <p class="center">Wesley Morford</p>
+        </footer>
+
+        <script src="js/portfolio.js"></script>
+	</body>
+	
+</html>

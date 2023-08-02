@@ -1,0 +1,18 @@
+h1 {color:blue;}
+
+p {
+	color: grey;
+	text-align: center;
+}
+
+body {
+	text-align: center;
+}
+
+.danger {
+	background-color: black;
+	color: yellow;
+	font-size: medium;
+	text-decoration: underline;
+	font-weight: bold;
+}

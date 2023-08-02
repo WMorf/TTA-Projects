@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Template</title>
+		<link rel="stylesheet" href="CSS/simple.css">
+		<script src="JavaScript/JavaScript_1.js" defer></script>
+	</head>
+	
+	<body>
+
+		<div style="background-color: grey;">
+			<h1>What is the scariest monster?</h1>
+			<h3>Choose from this list: </h3>
+		</div>
+
+		<br>
+
+		<!-- for switch statement for step 225 -->
+		<div style="background-color: lightgrey;">
+			<ul>
+				<li>Vampires</li>
+				<li>Werewolfs</li>
+				<li>Frankenstein</li> <!-- Monster's name according tosee XKCD -->
+				<li>Clowns</li>
+				<li>Swamp Thing</li>
+				<li>Aliens</li>
+			</ul>
+		</div>
+
+		<br>
+
+		<div style="background-color: grey;">
+			<h3>Enter your choice below :</h3>
+		</div>
+
+		<br>
+
+		<div style="background-color: lightgrey;">
+			<!-- user input using switch statement -->
+			<input id="monster" type="text">
+			<button onclick="MonsterFunction()">Submit Monster</button>
+			<p id="output">...</p>
+		</div>
+
+		<br>
+		<br>
+
+		<div style="background-color: grey;">
+			<p class="test">Will Change</p>
+			<p class="test">Won't Change</p>
+			<button onclick="ClassMethod()">Click Here</button>
+		</div>
+
+		<br>
+		<br>
+
+		<!-- Draws on canvas -->
+		<div style="background-color: lightgrey;">
+			<h3>Canvas 1</h1>
+			<canvas id="canvas"></canvas>
+			<br>
+			<button onclick="DrawLine()">Draw</button>
+		</div>
+
+		<br>
+
+		<div style="background-color: grey;"> <!-- creates gradient -->
+			<h3>Canvas 2</h3>
+			<canvas id="canvas2"></canvas>
+			<br>
+			<button onclick="GradientBackground()">Gradient</button>
+		</div>
+
+	</body>
+	
+</html>

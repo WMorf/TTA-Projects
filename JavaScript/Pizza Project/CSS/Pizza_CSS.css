@@ -1,0 +1,139 @@
+body {
+    background-color: #FFA600;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: brown;
+    color:blanchedalmond;
+    font-weight: 900;
+    text-align: center;
+    border: 2px solid black ;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+p {
+    font-weight: 900;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color:saddlebrown;
+    border: 2px solid black ;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+nav a {
+    margin: 2px;
+    border: 1px solid black ;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(117, 58, 16);
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttonhover:hover {
+    background-color: brown ;
+    color: aliceblue;
+}
+
+nav a:hover {
+    background-color: brown;
+    color: aliceblue;
+}
+
+footer {
+    margin-top: 700px;
+    font-weight: 900;
+}
+
+h3 {
+    text-align: center;
+    color: lightsalmon;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+}
+
+div {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blanchedalmond;
+}
+
+.textblock {
+    margin: 20px;
+    padding: 3px;
+    border: 2px solid black ;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+.textblock img {
+    border: 2px solid black ;
+    border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* id tags */
+#menuBG {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 400px;
+    height: 200px;
+}
+
+#totalPrice {
+    float: left;
+}
+
+.left {
+    width: 150px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 150px;
+    height: 200px;
+    float: right;
+}
+
+.centerblock
+{
+    float: left;
+    width: 350px;
+    height: 400px;
+}
+
+#showText {
+    float: left;
+}
+
+#cart {
+    top: 0;margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin-left: 100px;
+    width: 200px;
+    height: 40px;
+    background-color: firebrick;
+    color: antiquewhite;
+    font-weight: 900;
+    border-radius: 10px;
+    z-index: 10;
+}
+#btnOrder:hover {
+    background-color: crimson;
+    color: antiquewhite;
+}
