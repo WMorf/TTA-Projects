@@ -77,7 +77,7 @@ class Fbeast(models.Model):
         return self.name
 ```
 
-[**views.py**](https://github.com/WMorf/LiveProjectSummary/blob/main/Python/views.py)
+[**views.py**]([https://github.com/WMorf/LiveProjectSummary/blob/main/Python/views.py](https://github.com/WMorf/TTA-Projects/blob/main/Python%20Projects/Live%20Project/Python/views.py))
 
 ```
 def dfort_create(request):
