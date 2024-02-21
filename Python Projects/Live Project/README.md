@@ -1,7 +1,7 @@
 # Python Live Project
 
 # Introduction
-  During my last course at the Tech Academy, I took part alongside my fellow students adding onto a Django project in progress. We each were responsible for adding our own apps to the project with each app being built to feature CRUD functionality for a database of our choosing. Utilizing daily stand-ups and our weekly code retrospectives kept us accountable and managing our code accordingly. Version control was key during this time with multiple pull requests daily.
+  $${\color{red}During}$$ my last course at the Tech Academy, I took part alongside my fellow students adding onto a Django project in progress. We each were responsible for adding our own apps to the project with each app being built to feature CRUD functionality for a database of our choosing. Utilizing daily stand-ups and our weekly code retrospectives kept us accountable and managing our code accordingly. Version control was key during this time with multiple pull requests daily.
 Designing my own app allowed me to work on several front end and back end stories, debugging and improving the UX as my app grew. I am very proud of the visualizer used for displaying details of a specific model, using text and CSS to allow the user to view the item with some color. 
 
   During the 2-week sprint I learned how to code as a team and using the Agile Method to manage a larger project which I will bring to all future projects. 
